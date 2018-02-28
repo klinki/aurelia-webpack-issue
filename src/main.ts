@@ -13,7 +13,6 @@ export function configure(aurelia: Aurelia) {
     .standardConfiguration()
     .feature(PLATFORM.moduleName('resources/index'))
     .plugin(PLATFORM.moduleName('aurelia-notify'), (config) => {
-      config.timeout = 5000;
       config.containerSelector = '#notification-container';
     })
 

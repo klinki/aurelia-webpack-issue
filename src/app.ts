@@ -1,5 +1,7 @@
+import { autoinject } from 'aurelia-framework';
 import { NotificationService } from 'aurelia-notify';
 
+@autoinject()
 export class App {
   message = 'Hello World!';
 
