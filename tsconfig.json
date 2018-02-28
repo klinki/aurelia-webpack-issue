@@ -12,7 +12,8 @@
     "skipLibCheck": true,
     "lib": [
       "es2017", "dom"
-    ]
+    ],
+    "sourceMap": true
   },
   "exclude": [
     "node_modules",
