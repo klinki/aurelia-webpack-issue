@@ -11,7 +11,11 @@ import {PLATFORM} from 'aurelia-pal';
 export function configure(aurelia: Aurelia) {
   aurelia.use
     .standardConfiguration()
-    .feature(PLATFORM.moduleName('resources/index'));
+    .feature(PLATFORM.moduleName('resources/index'))
+    .plugin(PLATFORM.moduleName('aurelia-notify'), (config) => {
+      config.timeout = 5000;
+      config.containerSelector = '#notification-container';
+    })
 
   // Uncomment the line below to enable animation.
   // aurelia.use.plugin(PLATFORM.moduleName('aurelia-animator-css'));
